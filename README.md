@@ -3,6 +3,8 @@
 
 Este projeto se destina exemplificar um  pipeline de dados onde se demonstra uma sequência padrão de Extração, Transformação  e Carregamento de  dados, conforme solicitado no desafio de projeto.
 
+O programa será carregado ao se executar o arquivo pipeline.py
+
 ### Etapa 1 - Extração
 Nesta etapa o projeto Extrai  os dados à partir de um arquivo em  formato csv representando uma de base clientes (1.000 registros).
 
