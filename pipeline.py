@@ -2,7 +2,7 @@
 import pandas as pd
 
 ## 1. Tarefa de extração
-# Lendo arquivo .csv com ados de clientes
+# Lendo arquivo .csv com dados de clientes
 try:
     #  Tentando ler o arquivo de origem
     df = pd.read_csv("clientes.csv")
@@ -14,7 +14,7 @@ finally:
     # Concluindo operação
     print("Finalizando a operação de leitura/extração" )
 
-# Descomente apenas para teste
+# Verificando amostra - comente as linhas abaixo se  desejar.
 print("**  Amostra dos dados originais. **")
 print(df.head(n=10))
 print()
@@ -28,10 +28,10 @@ df.columns = ["ID", "Cliente", "Telefone", "Pais"]
 df["Atualizado"] = df["Pais"].apply(lambda x: "True" if x == "Brazil" else "False")
 
 # 3 - Passando nomes de clientes e paises para caixa alta
-df["Cliente"] = df["Cliente"].str.upper();
-df["Pais"] = df["Pais"].str.upper();
+df["Cliente"] = df["Cliente"].str.upper()
+df["Pais"] = df["Pais"].str.upper()
 
-# Descomente apenas para teste
+# Verificando amostra - comente as linhas abaixo se  desejar.
 print("** Amostra da transformação. ** ")
 print(df.head(n=10))
 print()
